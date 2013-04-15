@@ -1,7 +1,7 @@
 diff --git a/ldap_servers/LdapServer.class.php b/ldap_servers/LdapServer.class.php
 index
---- LdapServer.class.php.origin  2013-03-20 10:00:17.139961705 +0100
-+++ LdapServer.class.php	2013-03-20 10:00:25.847961939 +0100
+--- a/ldap_servers/LdapServer.class.php  2013-03-20 10:00:17.139961705 +0100
++++ b/ldap_servers/LdapServer.class.php	2013-03-20 10:00:25.847961939 +0100
 @@ -1636,7 +1636,7 @@
          $member_id = $group_entry['dn'];
        }
