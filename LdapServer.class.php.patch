@@ -1,0 +1,11 @@
+--- LdapServer.class.php.origin  2013-03-20 10:00:17.139961705 +0100
++++ LdapServer.class.php	2013-03-20 10:00:25.847961939 +0100
+@@ -1636,7 +1636,7 @@
+         $member_id = $group_entry['dn'];
+       }
+       else {// maybe cn, uid, etc is held
+-        $member_id = ldap_servers_get_first_rdn_value_from_dn($group_entry['dn'], $this->groupMembershipsAttrMatchingUserAttr);
++        $member_id = $group_entry['dn'];
+       }
+ 
+       if ($member_id && !in_array($member_id, $tested_group_ids)) {
