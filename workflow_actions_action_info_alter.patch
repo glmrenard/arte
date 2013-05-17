@@ -1,0 +1,13 @@
+diff --git a/workflow/workflow_actions/workflow_actions.module b/workflow/workflow_actions/workflow_actions.module
+--- a/workflow/workflow_actions/workflow_actions.module
++++ b/workflow/workflow_actions/workflow_actions.module
+@@ -228,6 +228,9 @@
+  */
+ function workflow_actions_action_info_alter(&$info) {
+   $transitions = workflow_actions_trigger_info();
++  if (empty($transitions)) {
++    return;
++  }
+   foreach ((array)$transitions['workflow'] as $transition => $data) {
+     // Loop through all available node actions and add them as triggers.
+     // But not if this has been flagged as a creation state.
