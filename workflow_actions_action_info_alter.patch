@@ -1,6 +1,6 @@
-diff --git a/workflow/workflow_actions/workflow_actions.module b/workflow/workflow_actions/workflow_actions.module
---- a/workflow/workflow_actions/workflow_actions.module
-+++ b/workflow/workflow_actions/workflow_actions.module
+diff --git a/sites/all/modules/workflow/workflow_actions/workflow_actions.module b/sites/all/modules/workflow/workflow_actions/workflow_actions.module
+--- a/sites/all/modules/workflow/workflow_actions/workflow_actions.module
++++ b/sites/all/modules/workflow/workflow_actions/workflow_actions.module
 @@ -228,6 +228,9 @@
   */
  function workflow_actions_action_info_alter(&$info) {
